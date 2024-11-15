@@ -1,0 +1,80 @@
+/* Center container on the page and give it a structured look */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90vh;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Messages container with scrolling */
+.messages-container {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 8px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* User and bot messages with alignment and fade-in effect */
+.message {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.user-message {
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.bot-message {
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.message-content {
+    max-width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+.user-message .message-content {
+    background-color: #8184D2;
+}
+
+.bot-message .message-content {
+    background-color: #444;
+}
+
+/* Fade-in animation for new messages */
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Loading indicator centered */
+.loading-indicator {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Form at the bottom */
+.input-form {
+    display: flex;
+    align-items: center;
+}

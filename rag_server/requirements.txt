@@ -1,0 +1,9 @@
+Flask
+groq
+flask-cors
+langchain
+gunicorn
+langchain-pinecone
+langchain-groq
+sentence-transformers
+langchain-community
