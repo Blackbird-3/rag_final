@@ -22,7 +22,7 @@ function Form() {
     async function getAnswer() {
         setLoading(true);
         let query = question;
-        const response = await axios.post('http://127.0.0.1:5001/answer', {query: query});
+        const response = await axios.post('https://react-rag.onrender.com/answer', {query: query});
         setLoading(false);
         console.log(response.data);
         setAnswer(response.data.answer);
