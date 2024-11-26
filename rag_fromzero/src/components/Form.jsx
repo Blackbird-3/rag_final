@@ -22,7 +22,8 @@ function Form() {
     async function getAnswer() {
         setLoading(true);
         let query = question;
-        const response = await axios.post('http://127.0.0.1:5001/answer', {query: query});
+        const response = await axios.post('http://44.218.218.202/answer', {query: query});
+        // const response = await axios.post('http://127.0.0.1:5001/answer', {query: query});
         setLoading(false);
         console.log(response.data);
         setAnswer(response.data.answer);
