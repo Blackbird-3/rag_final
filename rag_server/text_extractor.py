@@ -37,7 +37,7 @@ def extract_text_from_scanned_pdf(pdf_path):
 # Example usage
 if __name__ == "__main__":
     # Specify the path to your scanned PDF
-    pdf_file = r"C:/Shreshth/rag_final/rag_server/pdfs/UNFAIR_MEANS_POLICY.PDF"  # Replace with your PDF path
+    pdf_file = r"C:/Shreshth/rag_final/rag_server/pdfs/Career_Development_Policy-2019.pdf"  # Replace with your PDF path
 
     # Extract text
     try:

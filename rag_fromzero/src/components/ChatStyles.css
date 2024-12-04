@@ -44,11 +44,11 @@
 }
 
 .user-message .message-content {
-    background-color: #8184D2;
+    background-color: #eb778a;
 }
 
 .bot-message .message-content {
-    background-color: #444;
+    background-color: #eb778a;
 }
 
 /* Fade-in animation for new messages */
