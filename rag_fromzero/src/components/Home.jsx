@@ -58,7 +58,7 @@ const Home = () => {
         setLoading(true);
 
         try {
-            const response = await axios.post('http://44.218.218.202/answer', { query: question });
+            const response = await axios.post('/api/answer', { query: question });
             const aiMessage = {
                 role: 'assistant',
                 content: response.data.answer,
